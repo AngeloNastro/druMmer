@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 50px 0px 30px 0px;
+  text-align: center;
+  font-size: 40px;
+}
+
+header p {
+  font-size: 25px;
+}
+
+header{
+  margin-bottom: 5%;
+}
+
+.pads {
+  width: 80%;
+  height: 80%;
+  display: flex;
+}
+
+.pads > div {
+  height: 100px;
+  width: 100px;
+  margin: 1px;
+  flex: 1;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+}
+
+.pad1 {
+  background: #FF0000;
+  border-top-left-radius: 30px;
+}
+.pad2 {
+  background: #FF2C00;
+}
+.pad3 {
+  background: #FF5800;
+}
+.pad4 {
+  background: #FF8500;
+}
+.pad5 {
+  background: #FFB100;
+}
+.pad6 {
+  background: #FFDD00;
+  border-top-right-radius: 30px;
+}
+.pad7 {
+  background: #F3FF00;
+}
+.pad8 {
+  background: #C7FF00;
+}
+.pad9 {
+  background: #9BFF00;
+}
+.pad10 {
+  background: #6EFF00;
+}
+.pad11 {
+  background: #42FF00;
+}
+.pad12 {
+  background: #16FF00;
+}
+.pad13 {
+  background: #00FF16;
+}
+.pad14 {
+  background: #00FF42;
+}
+.pad15 {
+  background: #00FF6E;
+}
+.pad16 {
+  background: #00FF9B;
+}
+.pad17 {
+  background: #00FFC7;
+}
+.pad18 {
+  background: #00FFF3;
+}
+.pad19 {
+  background: #00DDFF;
+  border-bottom-left-radius: 30px;
+}
+.pad20 {
+  background: #00B1FF;
+}
+.pad21 {
+  background: #0085FF;
+}
+.pad22 {
+  background: #0058FF;
+}
+.pad23 {
+  background: #002CFF;
+}
+.pad24 {
+  background: #0000FF;
+  border-bottom-right-radius: 30px;
+}
+
+h4{
+  color: rgba(255, 255, 255, 0.5);
+  height: 100px;
+  width: 30px;
+  writing-mode: vertical-rl;
+  text-align: center;
+}
+
+h3{
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 80px;
+  text-align: center;
+  line-height: 100px;
+  text-shadow: 0px 1px 7px rgba(0,0,0,0.1);
+}
+
+/* BACKGROUND */
+.wrapper { 
+  height: 100%;
+  width: 100%;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+.pressanim{
+  animation-name: press;
+  animation-duration: 0.2s;
+}
+
+@keyframes press {
+  0%{transform: translateY(0px)}
+  50%{transform: translateY(5px)}
+  100%{transform: translateY(0px)}
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
