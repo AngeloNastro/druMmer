@@ -1,3 +1,7 @@
+  
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css");
+
 * {
   margin: 0;
   padding: 0;
@@ -122,6 +126,8 @@ header{
 }
 
 h4{
+  margin: 0px !important;
+  font-size: 20px;
   color: rgba(255, 255, 255, 0.5);
   height: 100px;
   width: 30px;
@@ -130,8 +136,9 @@ h4{
 }
 
 h3{
+  margin: 0px !important;
   color: rgba(255, 255, 255, 0.3);
-  font-size: 80px;
+  font-size: 60px;
   text-align: center;
   line-height: 100px;
   text-shadow: 0px 1px 7px rgba(0,0,0,0.1);

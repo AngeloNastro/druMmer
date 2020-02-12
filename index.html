@@ -7,9 +7,13 @@
       href="https://fonts.googleapis.com/css?family=Raleway"
       rel="stylesheet"
     />
+    <link rel="icon" href="logo.png">
     <link rel="stylesheet" href="./style.css" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>druMmer</title>
+    <script>
+    var LINK = "https://angelonastro.github.io/druMmer/"
+    </script>
   </head>
   <body>
     <section class="app wrapper noselect">
@@ -172,8 +176,29 @@
           </audio>
           <h3>N</h3>
         </div>
-      <h4>Percussions</h4>
+      <h4>Drum</h4>
       </div>
+    <!-- LEFT-MENU -->
+    <div class="fixed-action-btn" id="buttons">
+        <a href="#" class="hoverable btn-floating waves-effect grey btn-large"><i class="large material-icons">expand_less</i></a>
+        <ul>
+          <li><a href="" class="hoverable btn-floating waves-effect blue btn-large tooltipped" data-position="left" data-tooltip="Reload"><i class="large material-icons">refresh</i></a></li>
+          <li><a href="https://uk.linkedin.com/in/angelonastro" target="_blank" class="hoverable btn-floating waves-effect green btn-large tooltipped" data-position="left" data-tooltip="See my profile"><i class="large material-icons">face</i></a></li>
+          <li><a href="#!" class="hoverable btn-floating waves-effect yellow btn-large tooltipped" data-position="left" data-tooltip="Share"><i class="large material-icons" onclick="copyLink(),Materialize.toast('Link copied', 2500, 'rounded grey')">share</i></a></li>
+        </ul>
+      </div>
+
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+      <script>
+         function copyLink(){
+          navigator.clipboard.writeText(LINK).then(function() {
+          /* clipboard successfully set */
+          }, function() {
+          /* clipboard write failed */
+          });
+        }
+      </script>
     </section>
 
     <script src="index.js"></script>
